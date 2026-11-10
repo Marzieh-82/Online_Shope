@@ -1,0 +1,25 @@
+{
+  "customers": 4334,
+  "invoices": 18267,
+  "product_columns": 1612,
+  "selected_model": "KMeans",
+  "selected_k": 2,
+  "selected_features": [
+    "Seg_Recency",
+    "Seg_Frequency",
+    "Seg_Monetary",
+    "Seg_UniqueProducts"
+  ],
+  "sample_size_for_silhouette": 2500,
+  "silhouette_sampled": 0.3989477549093732,
+  "davies_bouldin": 0.9516318108379871,
+  "calinski_harabasz": 3902.8560059110005,
+  "cluster_sizes": {
+    "0": 2582,
+    "1": 1752
+  },
+  "top500_unique_customers": 500,
+  "association_rules_count": 142,
+  "association_method": "exact pairwise co-occurrence; not FP-Growth",
+  "association_products_evaluated": 150
+}
