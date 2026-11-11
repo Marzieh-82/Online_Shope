@@ -1,0 +1,121 @@
+{
+  "n_customers": 4334,
+  "n_invoices": 18267,
+  "n_products_in_basket": 1612,
+  "selected_algorithm": "KMeans",
+  "selected_k": 2,
+  "selected_features": [
+    "Seg_Recency",
+    "Seg_Frequency",
+    "Seg_Monetary",
+    "Seg_UniqueProducts"
+  ],
+  "k_sensitivity": [
+    {
+      "K": 2,
+      "Silhouette_sample": 0.3956567049023487,
+      "DaviesBouldin_full": 0.9516318108379871,
+      "CalinskiHarabasz_full": 3902.8560059110005,
+      "Smallest_cluster": 1752,
+      "Largest_cluster": 2582,
+      "Smallest_cluster_pct": 40.42455006922012
+    },
+    {
+      "K": 3,
+      "Silhouette_sample": 0.2956375800084941,
+      "DaviesBouldin_full": 1.1384389311081156,
+      "CalinskiHarabasz_full": 3136.941716935164,
+      "Smallest_cluster": 890,
+      "Largest_cluster": 1767,
+      "Smallest_cluster_pct": 20.535302261190587
+    },
+    {
+      "K": 4,
+      "Silhouette_sample": 0.286299643609946,
+      "DaviesBouldin_full": 1.2028342992137684,
+      "CalinskiHarabasz_full": 2637.6332185894116,
+      "Smallest_cluster": 818,
+      "Largest_cluster": 1450,
+      "Smallest_cluster_pct": 18.874019381633595
+    }
+  ],
+  "ward_fit_scope": "full_dataset",
+  "campaign_cap_share": 0.3,
+  "campaign_mix": {
+    "VIP loyalty / early access": 150,
+    "Cross-sell / bundle": 150,
+    "VIP win-back / personal offer": 116,
+    "Personalized recommendation": 84
+  },
+  "score_weight_sensitivity": [
+    {
+      "Scenario": "Baseline",
+      "Spearman_vs_baseline": 1.0,
+      "Top500_overlap_count": 500,
+      "Top500_overlap_pct": 100.0,
+      "Economic_weights": "(0.45, 0.35, 0.2)",
+      "Opportunity_weights": "(0.45, 0.3, 0.25)",
+      "Priority_weights": "(0.5, 0.35, 0.15)"
+    },
+    {
+      "Scenario": "Economic_heavier",
+      "Spearman_vs_baseline": 0.9912329841792888,
+      "Top500_overlap_count": 469,
+      "Top500_overlap_pct": 93.8,
+      "Economic_weights": "(0.55, 0.3, 0.15)",
+      "Opportunity_weights": "(0.4, 0.35, 0.25)",
+      "Priority_weights": "(0.6, 0.25, 0.15)"
+    },
+    {
+      "Scenario": "Opportunity_heavier",
+      "Spearman_vs_baseline": 0.9937769902821851,
+      "Top500_overlap_count": 460,
+      "Top500_overlap_pct": 92.0,
+      "Economic_weights": "(0.4, 0.35, 0.25)",
+      "Opportunity_weights": "(0.55, 0.3, 0.15)",
+      "Priority_weights": "(0.4, 0.45, 0.15)"
+    },
+    {
+      "Scenario": "Recency_heavier",
+      "Spearman_vs_baseline": 0.990514032660261,
+      "Top500_overlap_count": 448,
+      "Top500_overlap_pct": 89.6,
+      "Economic_weights": "(0.45, 0.35, 0.2)",
+      "Opportunity_weights": "(0.55, 0.25, 0.2)",
+      "Priority_weights": "(0.4, 0.3, 0.3)"
+    },
+    {
+      "Scenario": "Balanced",
+      "Spearman_vs_baseline": 0.9830440344687157,
+      "Top500_overlap_count": 442,
+      "Top500_overlap_pct": 88.4,
+      "Economic_weights": "(0.333, 0.333, 0.333)",
+      "Opportunity_weights": "(0.333, 0.333, 0.333)",
+      "Priority_weights": "(0.333, 0.333, 0.333)"
+    }
+  ],
+  "silhouette_sampled": 0.3956567049023487,
+  "davies_bouldin_full": 0.9516318108379871,
+  "calinski_harabasz_full": 3902.8560059110005,
+  "cluster_sizes": {
+    "0": 2582,
+    "1": 1752
+  },
+  "mean_stability_ARI": 0.9964625117171146,
+  "mean_subsample_stability_ARI": 0.9725206938249737,
+  "min_subsample_stability_ARI": 0.9390484499718982,
+  "cluster_statistically_tested_features": [
+    "Recency",
+    "Frequency",
+    "NetMonetary",
+    "AvgOrderValue",
+    "UniqueProducts"
+  ],
+  "top500_median_net_monetary": 2755.255,
+  "other_customers_median_net_monetary": 546.015,
+  "top500_count": 500,
+  "association_rule_count": 142,
+  "association_method": "exact pairwise co-occurrence; not FP-Growth or full Apriori",
+  "validation_passed": 16,
+  "validation_failed": 0
+}

@@ -1,0 +1,17 @@
+Check,Status,Detail
+CustomerID unique,PASS,
+One cluster label per customer,PASS,
+Exactly two non-empty clusters,PASS,"{0: 2582, 1: 1752}"
+"K sensitivity includes K=2,3,4",PASS,
+Ward comparison fitted on full dataset,PASS,
+Top500 has 500 rows,PASS,500
+Top500 IDs unique,PASS,
+Campaign share cap respected,PASS,"{'VIP loyalty / early access': 150, 'Cross-sell / bundle': 150, 'VIP win-back / personal offer': 116, 'Personalized recommendation': 84}"
+Score sensitivity scenarios present,PASS,
+Top500 net value positive where feasible,PASS,
+Basket binary,PASS,
+Basket invoice unique,PASS,
+Subsample stability calculated for 10 seeds,PASS,
+Cluster statistical comparison covers five features,PASS,
+Top500 commercial comparison covers six metrics,PASS,
+Top500 customer IDs are subset of customer table,PASS,
